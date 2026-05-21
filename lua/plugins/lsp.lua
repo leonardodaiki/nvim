@@ -34,21 +34,10 @@ vim.lsp.config("tinymist", {
     capabilities = capabilities,
 })
 
-vim.lsp.config("godot", {
-    cmd = { "nc", "127.0.0.1", "6005" },
-    filetypes = { "gd", "gdscript", "gdshader" },
-    root_dir = vim.fs.root(0, { "project.godot" }),
-    capabilities = capabilities,
-})
-
-
 vim.lsp.enable({
     "lua_ls",
     "ts_ls",
     "clangd",
     "rust_analyzer",
-    "godot",
     "tinymist"
 })
-
-
