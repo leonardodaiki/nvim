@@ -34,6 +34,10 @@ vim.lsp.config("tinymist", {
     capabilities = capabilities,
 })
 
+vim.lsp.config("pyright", {
+    capabilities = capabilities,
+})
+
 vim.lsp.config("texlab", {
     capabilities = capabilities,
     settings = {
@@ -60,6 +64,7 @@ vim.lsp.enable({
     "lua_ls",
     "ts_ls",
     "clangd",
+    "pyright",
     "rust_analyzer",
     "tinymist",
     "texlab",
